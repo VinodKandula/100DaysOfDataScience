@@ -9,7 +9,7 @@ Quiz AND.1 Description:
 
 SELECT standard_qty, poster_qty, gloss_qty
 FROM orders
-WHERE standard_qty >= 1000 AND poster_qty = 0 AND gloss_qty = 0;
+WHERE standard_qty > 1000 AND poster_qty = 0 AND gloss_qty = 0;
 
 ----------------------------------------------------------------------------------
 /*
