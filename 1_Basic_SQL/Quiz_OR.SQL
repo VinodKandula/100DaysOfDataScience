@@ -22,3 +22,14 @@ Quiz OR.2 Description:
 SELECT id
 FROM orders
 WHERE (gloss_qty > 4000 OR poster_qty > 4000) AND standard_qty = 0;
+--------------------------------------------------------------------------------
+
+/*
+Quiz OR.3 Description:
+	Find all the company names that start with a 'C' or 'W', and the primary contact 
+	contains 'ana' or 'Ana', but it doesn't contain 'eana'.
+*/
+
+SELECT name
+FROM accounts
+WHERE (name LIKE 'C%' OR name LIKE '%s') AND ((primary_poc LIKE '%ana%' OR primary_poc LIKE '%Ana%') AND primary_poc NOT LIKE '%eana%' );
