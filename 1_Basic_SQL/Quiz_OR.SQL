@@ -30,6 +30,8 @@ Quiz OR.3 Description:
 	contains 'ana' or 'Ana', but it doesn't contain 'eana'.
 */
 
-SELECT name
+SELECT *
 FROM accounts
-WHERE (name LIKE 'C%' OR name LIKE '%s') AND ((primary_poc LIKE '%ana%' OR primary_poc LIKE '%Ana%') AND primary_poc NOT LIKE '%eana%' );
+WHERE (name LIKE 'C%' OR name LIKE 'W%') 
+           AND ((primary_poc LIKE '%ana%' OR primary_poc LIKE '%Ana%') 
+           AND primary_poc NOT LIKE '%eana%');
