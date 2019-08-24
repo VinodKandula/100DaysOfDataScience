@@ -31,3 +31,14 @@ Quiz NOT.3 Description:
 SELECT name
 FROM accounts
 WHERE name NOT LIKE 'C%';
+
+--------------------------------------------------------------------------------
+/* 
+Quiz NOT.4 Description:
+	Use the accounts table to find All companies whose names do not contain the string 'one' 
+	somewhere in the name.
+*/
+
+SELECT name
+FROM accounts
+WHERE name NOT LIKE '%one%';
