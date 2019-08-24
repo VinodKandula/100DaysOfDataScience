@@ -11,3 +11,15 @@ SELECT standard_qty, poster_qty, gloss_qty
 FROM orders
 WHERE standard_qty >= 1000 AND poster_qty = 0 AND gloss_qty = 0;
 
+----------------------------------------------------------------------------------
+/*
+Quiz AND.2 Description:
+	Using the accounts table, find all the companies whose names do not start with 'C'
+	 and end with 's'.
+*/
+
+SELECT name
+FROM accounts
+WHERE name NOT LIKE 'C%' AND name Not LIKE '%s';
+
+-----------------------------------------------------------------------------------
