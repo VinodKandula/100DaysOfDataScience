@@ -20,3 +20,13 @@ SELECT *
 FROM orders
 WHERE total_amt_usd < 500
 LIMIT 10;
+
+---------------------------------------------------------------------------------
+/*
+Quiz WHERE.3 Description:
+Filter the accounts table to include the company name, website, and the primary point of contact (primary_poc) just for the Exxon Mobil company in the accounts table.
+*/
+
+SELECT name, website, primary_poc
+FROM accounts
+WHERE name = 'Exxon Mobil';
