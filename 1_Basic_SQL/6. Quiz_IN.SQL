@@ -8,3 +8,12 @@ Quiz IN.1 Description:
 SELECT name, primary_poc, sales_rep_id
 FROM accounts
 WHERE name IN ('Walmart', 'Target', 'Nordstrom');
+
+----------------------------------------------------------------------------------
+/*
+Quiz IN.2 Description:
+Use the web_events table to find all information regarding individuals who were contacted via the channel of organic or adwords.
+*/
+SELECT *
+FROM web_events
+WHERE channel IN ('organic', 'adwords');
