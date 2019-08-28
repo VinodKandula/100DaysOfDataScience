@@ -1,7 +1,8 @@
 -- @auther: Gabir N. Yousef
 -- @Date: 26 of Aug 2019
 ---------------------------------------------------------------------------------
-/*
+/* Quiz Discription:
+
 Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. However, you should only provide the results if the standard order quantity exceeds 100. Your final table should have 3 columns: region name, account name, and unit price.
 */
 
