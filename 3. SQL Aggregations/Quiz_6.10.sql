@@ -1,0 +1,14 @@
+-- @Auther: Gabir N. Yousef
+-- @Date: 3 of Sep 2019
+---------------------------------------------------------------------------------
+/* Quiz Description:
+Which channel was most frequently used by most accounts?
+*/
+
+SELECT a.id, a.name, w.channel, COUNT(*) use_of_channel
+FROM accounts a
+JOIN web_events w
+ON a.id = w.account_id
+GROUP BY a.id, a.name, w.channel
+ORDER BY use_of_channel DESC
+LIMIT 10;
