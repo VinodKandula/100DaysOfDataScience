@@ -3,7 +3,8 @@
 ---------------------------------------------------------------------------------
 /* Quiz Description:
 
-What was the smallest order placed by each account in terms of total usd. Provide only two columns - the account name and the total usd. Order from smallest dollar amounts to largest.
+What was the smallest order placed by each account in terms of total usd. Provide only
+two columns - the account name and the total usd. Order from smallest dollar amounts to largest.
 */
 
 SELECT a.name, MIN(total_amt_usd) smallest_order

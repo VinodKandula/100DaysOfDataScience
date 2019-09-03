@@ -3,7 +3,8 @@
 ---------------------------------------------------------------------------------
 /* Quiz Description:
 
-Find the number of sales reps in each region. Your final table should have two columns - the region and the number of sales_reps. Order from fewest reps to most reps.
+Find the number of sales reps in each region. Your final table should have two columns -
+the region and the number of sales_reps. Order from fewest reps to most reps.
 */
 
 SELECT r.name, COUNT(*) num_reps

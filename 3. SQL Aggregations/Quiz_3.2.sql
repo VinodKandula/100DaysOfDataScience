@@ -3,7 +3,8 @@
 ---------------------------------------------------------------------------------
 /* Quiz Description:
 
-Find the total sales in usd for each account. You should include two columns - the total sales for each company's orders in usd and the company name.
+Find the total sales in usd for each account. You should include two columns - the
+ total sales for each company's orders in usd and the company name.
 */
 
 SELECT a.name, SUM(total_amt_usd) total_sales
