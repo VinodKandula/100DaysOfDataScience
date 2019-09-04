@@ -6,7 +6,6 @@
 find the number of events that occcur for each day for each channel, then
 create a subquery that simply provides all of the data from your first query
 */
-
 SELECT *
 FROM (SELECT DATE_TRUNC('day',occurred_at) AS day,
            channel, COUNT(*) as events
